@@ -21,4 +21,12 @@ Changes to be committed:
         modified:   Git Usage.txt
 6、查看文件变化
 $ git diff 'Git Usage.txt'
+7、查看变化日志
+$ git log --pretty=oneline 'Git Usage.txt'
+4243ec3ada0e4c34e58ec9033eb258af72919438 (HEAD -> master) Git Usage append from 6...
+1eae1aecf856c2c8a443d7abf025fb13ac01aca6 Git Usage append from 5...
+1f4c5d4fec4547d098c40c71c877b2b3a1d25c25 Git Usage initial file.
+（Git不是按照1、2、3..来生成版本号的，原因是在分布式系统中，这样生成版本号容易重复，
+而是SHA1计算出来的一个非常大的数字，用十六进制表示，一般我们查看版本只需要前六位即可）
+
 
