@@ -1,0 +1,13 @@
+1、安装Git
+Linux：sudo apt-get install git；
+Windows：Git官网下载Git，然后进行安装；
+2、配置：
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+3、创建版本库：.git
+$ mkdir Myrepository
+$ cd Myrepository
+$ git init
+在此目录下会建立一个.git目录，千万不要乱改里面内容！！！
+4、添加文件到版本库
+$ git add Git Usage.txt
