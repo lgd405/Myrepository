@@ -10,4 +10,8 @@ $ cd Myrepository
 $ git init
 在此目录下会建立一个.git目录，千万不要乱改里面内容！！！
 4、添加文件到版本库
-$ git add Git Usage.txt
+$ git add 'Git Usage.txt'
+$ git commit -m "Git Usage initial file."
+
+5、修改后，文件状态会发生变化
+$ git status
