@@ -30,4 +30,16 @@ $ git log --pretty=oneline 'Git Usage.txt'
 而是SHA1计算出来的一个非常大的数字，用十六进制表示，一般我们查看版本只需要前六位即可）
 8、回退操作：git reset --hard commit_id
 9、查看历史操作：git reflog （以确定回到那个历史版本）
+10、Git的分区概念：
+工作区（Working Directory）：就是目录Myrepository；
+版本库（Repository）：工作区里面有个隐藏的目录（.git），就是版本库；
+Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支master，以及指向master的一个指针叫HEAD；
+
+我们把文件往Git版本库里添加的时候，是分两步执行的：
+第一步是用git add把文件添加进去，实际上就是把文件修改添加到暂存区；
+第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支。
+因为我们创建Git版本库时，Git自动为我们创建了唯一一个master分支，所以，现在，git commit就是往master分支上提交更改。
+你可以简单理解为，需要提交的文件修改通通放到暂存区，然后，一次性提交暂存区的所有修改。
+
+
 
