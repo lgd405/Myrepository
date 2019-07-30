@@ -67,6 +67,9 @@ remote: Resolving deltas: 100% (9/9), done.
 To https://github.com/lgd405/Myrepository.git
  * [new branch]      master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
+d）以后每当本地库发生改变，仅需：git push origin master，即可推送至远程库；
+
+
 
 
 
