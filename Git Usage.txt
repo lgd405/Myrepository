@@ -28,5 +28,6 @@ $ git log --pretty=oneline 'Git Usage.txt'
 1f4c5d4fec4547d098c40c71c877b2b3a1d25c25 Git Usage initial file.
 （Git不是按照1、2、3..来生成版本号的，原因是在分布式系统中，这样生成版本号容易重复，
 而是SHA1计算出来的一个非常大的数字，用十六进制表示，一般我们查看版本只需要前六位即可）
-
+8、回退操作：git reset --hard commit_id
+9、查看历史操作：git reflog （以确定回到那个历史版本）
 
