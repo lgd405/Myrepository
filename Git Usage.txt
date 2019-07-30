@@ -55,7 +55,7 @@ a）本地生成密钥和公钥：ssh-keygen -t rsa -C "lgd405@hotmail.com"，依据提示操作（
 如果一切顺利的话，可以在用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。
 b）登陆GitHub，打开“Account settings”，“SSH Keys”页面：点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容；
 c）在GitHub上创建一个仓库，如Myrepository；
-$ git remote add origin https://github.com/lgd405/Myrepository.git
+$ git remote add origin https://github.com/lgd405/Myrepository.git或git remote add origin git@github.com:lgd405/Myrepository.git
 $ git push -u origin master（按照提示进行操作，初次必须用-u选项）
 Enumerating objects: 35, done.
 Counting objects: 100% (35/35), done.
@@ -68,8 +68,7 @@ To https://github.com/lgd405/Myrepository.git
  * [new branch]      master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 d）以后每当本地库发生改变，仅需：git push origin master，即可推送至远程库；
-
-
+14、克隆远程版本库：$ git clone git@github.com:lgd405/Myrepository.git
 
 
 
