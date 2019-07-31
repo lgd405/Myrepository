@@ -1,36 +1,45 @@
-1¡¢°²×°Git
+1.°²×°Git
 Linux£ºsudo apt-get install git£»
 Windows£ºGit¹ÙÍøÏÂÔØGit£¬È»ºó½øĞĞ°²×°£»
-2¡¢ÅäÖÃ£º
+
+2.ÅäÖÃ£º
 $ git config --global user.name "Your Name"
 $ git config --global user.email "email@example.com"
-3¡¢´´½¨°æ±¾¿â£º.git
+
+3.´´½¨°æ±¾¿â£º.git
 $ mkdir Myrepository
 $ cd Myrepository
 $ git init
 ÔÚ´ËÄ¿Â¼ÏÂ»á½¨Á¢Ò»¸ö.gitÄ¿Â¼£¬Ç§Íò²»ÒªÂÒ¸ÄÀïÃæÄÚÈİ£¡£¡£¡
-4¡¢Ìí¼ÓÎÄ¼şµ½°æ±¾¿â
+
+4.Ìí¼ÓÎÄ¼şµ½°æ±¾¿â
 $ git add 'Git Usage.txt'
 $ git commit -m "Git Usage initial file."
-5¡¢Ö»ÒªÎÄ¼şĞŞ¸Ä£¬ÎÄ¼ş×´Ì¬¶¼»á·¢Éú±ä»¯
+
+5.Ö»ÒªÎÄ¼şĞŞ¸Ä£¬ÎÄ¼ş×´Ì¬¶¼»á·¢Éú±ä»¯
 $ git status
 On branch master
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
 
         modified:   Git Usage.txt
-6¡¢²é¿´ÎÄ¼ş±ä»¯
+
+6.²é¿´ÎÄ¼ş±ä»¯
 $ git diff 'Git Usage.txt'
-7¡¢²é¿´±ä»¯ÈÕÖ¾
+
+7.²é¿´±ä»¯ÈÕÖ¾
 $ git log --pretty=oneline 'Git Usage.txt'
 4243ec3ada0e4c34e58ec9033eb258af72919438 (HEAD -> master) Git Usage append from 6...
 1eae1aecf856c2c8a443d7abf025fb13ac01aca6 Git Usage append from 5...
 1f4c5d4fec4547d098c40c71c877b2b3a1d25c25 Git Usage initial file.
 £¨Git²»ÊÇ°´ÕÕ1¡¢2¡¢3..À´Éú³É°æ±¾ºÅµÄ£¬Ô­ÒòÊÇÔÚ·Ö²¼Ê½ÏµÍ³ÖĞ£¬ÕâÑùÉú³É°æ±¾ºÅÈİÒ×ÖØ¸´£¬
 ¶øÊÇSHA1¼ÆËã³öÀ´µÄÒ»¸ö·Ç³£´óµÄÊı×Ö£¬ÓÃÊ®Áù½øÖÆ±íÊ¾£¬Ò»°ãÎÒÃÇ²é¿´°æ±¾Ö»ĞèÒªÇ°ÁùÎ»¼´¿É£©
-8¡¢»ØÍË²Ù×÷£ºgit reset --hard commit_id
-9¡¢²é¿´ÀúÊ·²Ù×÷£ºgit reflog £¨ÒÔÈ·¶¨»Øµ½ÄÇ¸öÀúÊ·°æ±¾£©
-10¡¢GitµÄ·ÖÇø¸ÅÄî£º
+
+8.»ØÍË²Ù×÷£ºgit reset --hard commit_id
+
+9.²é¿´ÀúÊ·²Ù×÷£ºgit reflog £¨ÒÔÈ·¶¨»Øµ½ÄÇ¸öÀúÊ·°æ±¾£©
+
+10.GitµÄ·ÖÇø¸ÅÄî£º
 ¹¤×÷Çø£¨Working Directory£©£º¾ÍÊÇÄ¿Â¼Myrepository£»
 °æ±¾¿â£¨Repository£©£º¹¤×÷ÇøÀïÃæÓĞ¸öÒş²ØµÄÄ¿Â¼£¨.git£©£¬¾ÍÊÇ°æ±¾¿â£»
 GitµÄ°æ±¾¿âÀï´æÁËºÜ¶à¶«Î÷£¬ÆäÖĞ×îÖØÒªµÄ¾ÍÊÇ³ÆÎªstage£¨»òÕß½Ğindex£©µÄÔİ´æÇø£¬»¹ÓĞGitÎªÎÒÃÇ×Ô¶¯´´½¨µÄµÚÒ»¸ö·ÖÖ§master£¬ÒÔ¼°Ö¸ÏòmasterµÄÒ»¸öÖ¸Õë½ĞHEAD£»
@@ -39,16 +48,19 @@ GitµÄ°æ±¾¿âÀï´æÁËºÜ¶à¶«Î÷£¬ÆäÖĞ×îÖØÒªµÄ¾ÍÊÇ³ÆÎªstage£¨»òÕß½Ğindex£©µÄÔİ´æÇø£¬»¹Ó
 µÚ¶ş²½ÊÇÓÃgit commitÌá½»¸ü¸Ä£¬Êµ¼ÊÉÏ¾ÍÊÇ°ÑÔİ´æÇøµÄËùÓĞÄÚÈİÌá½»µ½µ±Ç°·ÖÖ§¡£
 ÒòÎªÎÒÃÇ´´½¨Git°æ±¾¿âÊ±£¬Git×Ô¶¯ÎªÎÒÃÇ´´½¨ÁËÎ¨Ò»Ò»¸ömaster·ÖÖ§£¬ËùÒÔ£¬ÏÖÔÚ£¬git commit¾ÍÊÇÍùmaster·ÖÖ§ÉÏÌá½»¸ü¸Ä¡£
 Äã¿ÉÒÔ¼òµ¥Àí½âÎª£¬ĞèÒªÌá½»µÄÎÄ¼şĞŞ¸ÄÍ¨Í¨·Åµ½Ôİ´æÇø£¬È»ºó£¬Ò»´ÎĞÔÌá½»Ôİ´æÇøµÄËùÓĞĞŞ¸Ä¡£git
-11¡¢³·Ïú°æ±¾ÎÄ¼ş
+
+11.³·Ïú°æ±¾ÎÄ¼ş
 a)Èç¹ûÃ»ÓĞÖ´ĞĞ:git addÃüÁî£¬Ö±½Ócheckout£¬git checkout -- 'Git Usage.txt',£¨×¢ÒâÒ»¶¨ÒªÓĞ--£©
 b)Èç¹ûÒÑ¾­Ö´ĞĞ:git addÃüÁî£¬ÔòĞèÒª£º
 git reset HEAD 'Git Usage.txt'
 git checkout -- 'Git Usage.txt'
 (¿ÉÒÔÓÃgit status ²é¿´×´Ì¬£©
-12¡¢É¾³ıÎÄ¼ş
+
+12.É¾³ıÎÄ¼ş
 a£©Èç¹û½öÉ¾³ı¹¤×÷ÇøÎÄ¼ş£¬È·ÈÏÊÇÎóÉ¾ºó£¬¿ÉÒÔÓÃgit checkout -- »Ö¸´£»
 b£©È·ÊµÒªÉ¾³ı°æ±¾¿âÖĞµÄÎÄ¼ş£¬ÏÈ(1)git rm <filename>...,(2)git commit -m 'Reason for removing'
-13¡¢ÍÆËÍÖÁÔ¶³Ì¿â
+
+13.ÍÆËÍÖÁÔ¶³Ì¿â
 ÓĞÁ½ÖÖÄ£Ê½£º1£©×Ô¼º´î½¨Ò»Ô¶³Ì·şÎñÆ÷£»2£©ÀûÓÃGitHub´´½¨Ò»¸öÔ¶³Ì¿â£»
 ÏÈËµµÚ2£©ÖÖÄ£Ê½£º
 a£©±¾µØÉú³ÉÃÜÔ¿ºÍ¹«Ô¿£ºssh-keygen -t rsa -C "lgd405@hotmail.com"£¬ÒÀ¾İÌáÊ¾²Ù×÷£¨Ò»°ãÒ»Â·»Ø³µ£©£»
@@ -68,9 +80,16 @@ To https://github.com/lgd405/Myrepository.git
  * [new branch]      master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 d£©ÒÔºóÃ¿µ±±¾µØ¿â·¢Éú¸Ä±ä£¬½öĞè£ºgit push origin master£¬¼´¿ÉÍÆËÍÖÁÔ¶³Ì¿â£»
-14¡¢¿ËÂ¡Ô¶³Ì°æ±¾¿â£º$ git clone git@github.com:lgd405/Myrepository.git
+
+14.¿ËÂ¡Ô¶³Ì°æ±¾¿â£º$ git clone git@github.com:lgd405/Myrepository.git
 Òª¿ËÂ¡Ò»¸ö²Ö¿â£¬Ê×ÏÈ±ØĞëÖªµÀ²Ö¿âµÄµØÖ·£¬È»ºóÊ¹ÓÃgit cloneÃüÁî¿ËÂ¡¡£
 GitÖ§³Ö¶àÖÖĞ­Òé£¬°üÀ¨https£¬µ«Í¨¹ısshÖ§³ÖµÄÔ­ÉúgitĞ­ÒéËÙ¶È×î¿ì¡£
+
+15.·ÖÖ§¹ÜÀí
+a)´´½¨ÇĞ»»·ÖÖ§£º
+$ git branch dev
+$ git checkout dev
+
 
 
 
