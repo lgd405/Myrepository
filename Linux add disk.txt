@@ -1,0 +1,14 @@
+
+1.创建分区：fdisk /dev/sdb
+2.分区检查：partprobe /dev/sdb
+3.格式化分区：mke2fs /dev/sdb1
+4.挂载分区mount /dev/sdb1　/mnt/git
+5.启动加载：修改/etc/fstab，添加：
+  /dev/sdb1 /mnt/git ext2 defaults 0 0
+6.检查添加：mount -a
+7.几个常用的磁盘命令：
+df
+du
+lsblk
+blkid
+parted /dev/sda print
